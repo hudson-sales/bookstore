@@ -19,7 +19,7 @@ module.exports = class App {
 
     createAuthor(name, nationality, bio) {
         const author = new Author(name, nationality, bio)
-        App.#database.find(author)
+        App.#database.saveAuthor(author)
     }
 
     getAuthor() {
